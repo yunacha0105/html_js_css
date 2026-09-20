@@ -14,49 +14,174 @@ body{
     border-radius: 20px;
 }
 
-.circle{
-    position: absolute;
-    width: 700px;
-    height: 700px;
-    border-radius: 50%;
-    left: 210px;
-    bottom: -500px;
-}
-
 .rectangle{
     position: absolute;
     width: 140px;
     height: 140px;
-    top: 50%;
+    top: 800px;
     left: 50%;
     border: 1px solid rgb(140 136 131);
     border-radius: 20px;
-}
-
-.rectangle[data-page="1"]{
-    background-color: rgb(240 238 233);
-}
-.rectangle[data-page="2"]{
-    background-color: rgb(185 131 145);
-}
-.rectangle[data-page="3"]{
-    background-color: rgb(92 151 203);
-}
-.rectangle[data-page="4"]{
-    background-color: rgb(100 96 73);
-}
-.rectangle[data-page="a"]{
-    background-color: rgb(210 147 128);
-}
-.rectangle[data-page="b"]{
-    background-color: rgb(136 67 50);
-}
-.rectangle[data-page="c"]{
-    background-color: rgb(99 55 61);
+    z-index: 2;
 }
 
 .rectangle2{
-    width: 30px;
-    height: 30px;
-    border: 2px solid black;
+    position: absolute;
+    width: 760px;
+    top: 800px;
+    left: 50%;
+    z-index: 0;
+
+    pointer-events: none;
+
+    & img{
+        width: 180px;
+        height: 240px;
+
+        visibility: hidden;
+    }
 }
+
+.background_color[data-page="red-mahogany"]{
+    position: absolute;
+    width: 1120px;
+    height: 630px;
+    overflow: hidden;
+    background-color: rgb(96 55 61);
+    opacity: 30%;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+.background_color[data-page="arabian-spice"]{
+    position: absolute;
+    width: 1120px;
+    height: 630px;
+    overflow: hidden;
+    background-color: rgb(136 67 50);
+    opacity: 30%;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+.background_color[data-page="muted-clay"]{
+    position: absolute;
+    width: 1120px;
+    height: 630px;
+    overflow: hidden;
+    background-color: rgb(210 147 128);
+    opacity: 30%;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+.background_color[data-page="cloud-dancer"]{
+    position: absolute;
+    width: 1120px;
+    height: 630px;
+    overflow: hidden;
+    background-color: rgb(240 238 233);
+    opacity: 30%;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+.background_color[data-page="foxglove"]{
+    position: absolute;
+    width: 1120px;
+    height: 630px;
+    overflow: hidden;
+    background-color: rgb(185 131 145);
+    opacity: 30%;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+.background_color[data-page="all-aboard"]{
+    position: absolute;
+    width: 1120px;
+    height: 630px;
+    overflow: hidden;
+    background-color: rgb(92 151 203);
+    opacity: 30%;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+.background_color[data-page="burnt-olive"]{
+    position: absolute;
+    width: 1120px;
+    height: 630px;
+    overflow: hidden;
+    background-color: rgb(100 96 73);
+    opacity: 30%;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.rectangle[data-page="red-mahogany"]{
+    background-color: rgb(96 55 61);
+    &:hover ~ .rectangle2:nth-child(8) img{
+        visibility: visible;
+    }
+    &:hover ~ .background_color:nth-child(15){
+        visibility: visible;
+    }
+}
+.rectangle[data-page="arabian-spice"]{
+    background-color: rgb(136 67 50);
+    &:hover ~ .rectangle2:nth-child(9) img{
+        visibility: visible;
+    }
+    &:hover ~ .background_color:nth-child(16){
+        visibility: visible;
+    }
+}
+.rectangle[data-page="muted-clay"]{
+    background-color: rgb(210 147 128);
+    &:hover ~ .rectangle2:nth-child(10) img{
+        visibility: visible;
+    }
+    &:hover ~ .background_color:nth-child(17){
+        visibility: visible;
+    }
+}
+.rectangle[data-page="cloud-dancer"]{
+    background-color: rgb(240 238 233);
+    &:hover ~ .rectangle2:nth-child(11) img{
+        visibility: visible;
+    }
+    &:hover ~ .background_color:nth-child(18){
+        visibility: visible;
+    }
+}
+.rectangle[data-page="foxglove"]{
+    background-color: rgb(185 131 145);
+    &:hover ~ .rectangle2:nth-child(12) img{
+        visibility: visible;
+    }
+    &:hover ~ .background_color:nth-child(19){
+        visibility: visible;
+    }
+}
+.rectangle[data-page="all-aboard"]{
+    background-color: rgb(92 151 203);
+    &:hover ~ .rectangle2:nth-child(13) img{
+        visibility: visible;
+    }
+    &:hover ~ .background_color:nth-child(20){
+        visibility: visible;
+    }
+}
+.rectangle[data-page="burnt-olive"]{
+    background-color: rgb(100 96 73);
+    &:hover ~ .rectangle2:nth-child(14) img{
+        visibility: visible;
+    }
+    &:hover ~ .background_color:nth-child(21){
+        visibility: visible;
+    }
+}
+
+

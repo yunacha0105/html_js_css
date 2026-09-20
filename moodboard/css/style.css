@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.gallery{
+    position: relative;
+    width: 1120px;
+    height: 630px;
+    overflow: hidden;
+
+    border: 3px solid rgb(74 71 68);
+    border-radius: 20px;
+
+    & *{
+        margin: 0;
+    }
+}
+
+button{
+    position: absolute;
+    top: 13px;
+    right: 0px;
+    padding: 10px 40px;
+    background-color: white;
+    border: none;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.color_name{
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-left: 30px;
+}
+
+.colorchip{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+hr{
+    position: absolute;
+    width: 40px;
+    border: 1px solid black;
+    top: 120px;
+    left: 33px;
+}
+
+.moodwords{
+    margin-left: 30px;
+}

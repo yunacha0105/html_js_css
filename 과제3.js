@@ -20,14 +20,6 @@ rects_pop.forEach((rect, i) => {
         img.src = `./moodboard/image/circle2/${color_name}${j}.jpg`;
         rect.appendChild(img);}
 });
-
-// const img = document.querySelectorAll('img')
-// img.forEach((img, i) => {
-//     const angle = 180
-//     const angleDiff = (angle / (n*l))*i - (angle/2) +10;
-//     img.style.transform = `translate(-50%, -50%) rotate(${angleDiff}deg) translate(0, -520px)`
-// })
-
     
 function f01(r){
     const page = r.dataset.page;

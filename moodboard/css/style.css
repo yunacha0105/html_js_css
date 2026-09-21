@@ -55,13 +55,13 @@ hr{
     position: absolute;
     width: 50px;
     border: 1px solid black;
-    top: 150px;
+    top: 140px;
     left: 40px;
 }
 
 .moodwords{
     margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 25px;
     & p{
         margin: 7px;
         letter-spacing: 5px;
@@ -70,6 +70,48 @@ hr{
 
 .discription{
     margin-left: 30px;
-    margin-top: 50px;
-    width: 280px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+.left img{
+    margin-bottom: 5px;
+    margin-left: 40px;
+    width: 150px;
+    height: 200px;
+    border: 1.5px solid rgb(140 136 131);
+    border-radius: 20px;
+}
+.texture{
+    position: absolute;
+    top: 110px;
+    right: 50px;
+}
+
+.title{
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.styling-ideas{
+    position: absolute;
+    top: 310px;
+    right: 80px;
+}
+
+.keywords{
+    width: 380px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: 8px;
+    & .title{
+        grid-row: span 3;
+    }
 }

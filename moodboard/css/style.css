@@ -16,6 +16,13 @@ body{
     & *{
         margin: 0;
     }
+    
+    display: grid;
+    grid-template-columns: 4fr 2fr 0.5fr;
+}
+.left, .right{
+    display: flex;
+    flex-direction: column;
 }
 
 button{
@@ -40,16 +47,29 @@ button{
     display: flex;
     flex-direction: row;
     margin-left: 30px;
+    font-size: 23px;
+    font-weight: 500;
 }
 
 hr{
     position: absolute;
-    width: 40px;
+    width: 50px;
     border: 1px solid black;
-    top: 120px;
-    left: 33px;
+    top: 150px;
+    left: 40px;
 }
 
 .moodwords{
     margin-left: 30px;
+    margin-top: 30px;
+    & p{
+        margin: 7px;
+        letter-spacing: 5px;
+    }
+}
+
+.discription{
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 280px;
 }
